@@ -1,0 +1,490 @@
+/* Variables */
+$pageHeight = 100vh
+$font = "Roboto"
+
+
+/* CSS */
+*, *:before, *:after
+  transition 0.35s ease
+
+/* body
+  overflow hidden */
+
+nav a
+  text-decoration none !important
+  color #aaa
+
+nav ul li a
+  color #777
+  transition 0.3s ease
+
+nav ul li a:hover
+   color #444
+
+.left li.active
+  background none
+  box-shadow: inset 0 -2px 0 rgb(57, 203, 88);
+  
+nav ul a:hover
+  background none
+  
+.side-nav li
+  padding 0
+  
+/* .navbar
+  border 0
+  margin 0
+  background-color transparent !important
+  background-color #fff
+  box-shadow 0 1px 5px rgba(0, 0, 0, 0.1)
+  
+.navbar-header
+  padding 5px
+
+.navbar-toggle
+  border 0
+  padding 0
+  font-size 25px
+  padding 5px
+  background none !important
+
+.navbar-toggle .icon-bar
+  height 1px */
+  
+a.brand-logo
+  background-image url('https://image.shutterstock.com/image-vector/vector-illustration-abstract-social-network-260nw-507791317.jpg')
+  height: 100%
+  width: 150px
+  background-size: 100% 100%
+
+.navbar-fixed nav
+  box-shadow 0 1px 5px rgba(0, 0, 0, 0.15)
+  border-bottom 1px solid #ccc
+
+.navbar-nav li a
+  font-family Lato
+  font-size 14px
+  padding 20px
+  /* padding: 25px !important; */
+
+ul.left.hide-on-med-and-down
+  margin-left: 160px;
+
+.mainLinks:first-child
+  padding-right 0
+
+.side-nav .brand-logo 
+  background url('https://multiplier.in/team-img/frontpage%20BG/multiplyer - symbol.png')
+  
+.side-nav a.mainLinks
+  padding 5px
+  height auto
+  
+button.center-block
+  display block
+  width 90%
+  margin 0 auto
+  
+section
+  height $pageHeight
+  padding-top: 60px !important
+  background-color #fff
+  transition 0.5s ease
+  
+section h1
+  margin 0
+  
+.onepage-pagination
+  transform translateY(-50%)
+  background-color rgba(225, 225, 225, 0.85)
+  border-radius 15px
+
+.onepage-pagination li a.active:before
+  left 5px
+  
+.onepage-pagination li a:before
+  left 8px
+  
+  
+/* General Introduction Slide */
+$strokeColor = #ddd
+// $page1Img = 'http://8txb81fmsytmpvkp2gk1z8y2.wpengine.netdna-cdn.com/wp-content/uploads/2015/01/7.-Another-picture-of-people-working-1024x577.jpg'
+// $page1Img = "https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/58.jpg" 
+
+
+#page-1
+  background: linear-gradient(rgba(0, 51, 51, 0.5), rgba(0,51,39,.5)),url("https://madewithnetwork.ams3.cdn.digitaloceanspaces.com/spatie-space-production/3144/react-particles.gif");
+  background-size: cover;
+  background-repeat: repeat,no-repeat;
+  // display none
+  /* background-position: top left,center center; */
+  
+#intro-hero
+  margin-top 100px
+  color #fff
+  font-family $font
+  font-weight bold
+  text-shadow 1px 1px .5px rgba(0,0,0,0.3)
+  
+  .white-text
+    color #d9d9d9
+  
+.white-grad
+  color #fff
+  font-family $font
+  text-shadow 1px 1px .5px rgba(0,0,0,0.3)
+
+#page-1 h3
+  font-size 20px
+  margin 5px 0
+  opacity 0.8
+  
+// #page-1 h3:nth-child(2)
+  // margin-top 50px
+  
+#page-1 #free.btn.green
+  margin-top 20px
+
+#page-1 .bottom
+  position absolute
+  left 0
+  right 0
+  bottom 15px
+  margin 0 auto
+  width 75%
+  
+  
+#page-1 .bottom .col-xs-3
+  border-right 1px solid rgba(173, 173, 133, 0.15)
+  
+#page-1 .bottom .col-xs-3:last-child
+  border none
+
+#page-1 .bottom .counter .white-text
+  font-family $font
+  font-size 20px
+  font-weight bold
+
+#page-1 .flash-preview
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  margin auto
+  padding 10px
+  color #fff
+  font-family $font
+  
+.navbar-fixed
+  position absolute
+  // display none
+  
+#intro-hero, #page-1 h3.h2, #free
+  visibility hidden
+
+// #page-1 .bottom .counter .grey-text
+  
+/* What is Multiplier Slide */
+
+// rgba(57, 203, 88, 0.5)
+#page-2
+  position relative
+  // background linear-gradient(50deg, rgba(57, 203, 88, 0.7), rgba(27,30,39,.6))
+  // filter: hue-rotate(50deg)
+  // background-size fixed
+  background linear-gradient(50deg, rgba(173, 173, 133, 0.7), rgba(27,30,39,.6))
+  background-repeat no-repeat
+  text-align center
+  z-index 100
+
+#page-2:before 
+  position absolute
+  content ''
+  left 0
+  right 0
+  top 0
+  bottom 0
+  background  url('https://codeanywhere.com/images/map-dots.png')
+  background-size fixed
+  background-repeat no-repeat
+  z-index -1
+
+#page-2 h1
+  transform translateX(-100px)
+  
+#page-2.active h1
+  transform translateX(0)
+  
+#page-2 img
+  margin 0 auto
+  
+
+/*  
+#landing-page .landing-slide.question .question-content .big-logo,
+#landing-page .landing-slide.question .question-content h3,
+#landing-page .landing-slide.question .question-content p {
+    -moz-transition: margin-top .3s ease-out, opacity .3s ease-out;
+    -o-transition: margin-top .3s ease-out, opacity .3s ease-out;
+    -webkit-transition: margin-top .3s ease-out, opacity .3s ease-out;
+    transition: margin-top .3s ease-out, opacity .3s ease-out;
+    opacity: 0
+}
+
+#landing-page .landing-slide.question .question-content .big-logo {
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+    margin-bottom: 104px;
+    width: 98px;
+    height: 189px;
+    background-size: 98px 189px;
+    background-repeat: no-repeat;
+    background-image: url(https://stockflare.com/images/landing/logo-white.png);
+    -moz-transition-delay: .8s;
+    -o-transition-delay: .8s;
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    #page-2 .big-logo {
+        background-image: url(https://stockflare.com/images/landing/logo-white@2x.png)
+    }
+}
+*/
+
+/* Startup,WorkspacesListing Slide */
+.section h1
+  font-family $font
+  font-weight 100
+  
+//Typed Plugin Css
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+
+@-webkit-keyframes blink
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+
+@-moz-keyframes blink
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  
+#page-3
+  margin 0
+  // padding 0 !important
+  
+#page-3 .nav-pills
+  text-align center
+  width 75%
+  margin 25px auto 30px
+  border-radius 5px
+  box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+
+#page-3 .nav-pills li 
+  // float none
+  display inline-block
+  width 33.3%
+  text-align: center;
+  // background-color: rgb(57, 203, 88);
+  margin-left 0
+  border-right: 1px solid rgba(0,0,0,0.2)
+
+#page-3 .nav-pills li:last-child
+  border-right none
+  
+#page-3 .nav-pills li a
+  text-transform capitalize
+  padding: 10px 15px;
+  border-radius: 0;
+  font-family Roboto;
+  font-weight: 100;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+
+#page-3 .nav-pills > li.active > a, #page-3  .nav-pills > li.active > a:focus, #page-3  .nav-pills > li.active > a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -3px 12.5px 2px rgba(0, 0, 0, 0.2);
+}
+#page-3 .nav>li>a:focus, #page-3 .nav>li>a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+// Slider
+#page-3 .tab-content .pane
+  display none
+#page-3 .tab-content .pane.active
+  display block
+  
+.autoplay .slide {
+  height: 200px;
+  line-height: 200px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #bbb;
+  color: #aaa;
+  background-color: #fff;
+  font-size: 10rem;
+}
+.autoplay .slick-arrow {
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  z-index: 100;
+}
+.autoplay .slick-prev, .autoplay .ion-ios-arrow-left {
+  background: linear-gradient(90deg, white, transparent);
+}
+.autoplay .slick-next, .autoplay .ion-ios-arrow-right {
+  background: linear-gradient(-90deg, white, transparent);
+}
+.autoplay .slick-prev:before, .autoplay .slick-next:before {
+  color: #555;
+  font-size: 50px;
+}
+#page-3 .col-md-3.slick-slide.slick-active {
+  outline: none;
+}
+#page-3 .card .card-action {
+  text-align center;
+}
+
+
+
+
+
+
+/* Website Preview Slide */
+#page-4.active > #site-demo
+  position fixed
+  bottom -80px
+  // left 0
+  // right 0
+  // margin auto
+  // width 80%
+  // background url('//multiplier.in/team-img/frontpage%20BG/site-demo.png')
+
+
+  
+
+
+
+
+
+
+
+
+
+/* Sign Up Slide */  
+#page-5
+  // background linear-gradient(rgba(27,30,39,.9),rgba(27,30,39,.9)),url(//stockflare.com/images/landing/background-6.jpg)
+  // background url(http://img03.deviantart.net/df81/i/2007/286/1/5/hardwood_w_lights_by_zyklophon.jpg)
+  
+  background linear-gradient(rgba(0,51,51,0.5),rgba(0,128,255,0.5)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80')
+  background-size 100% 100%
+  padding-top 75px
+
+#page-5 .card-panel 
+  margin-top 50px
+  
+#page-5 #register-page
+  font-family $font
+
+#page-5 #register-page .input-field label, #page-5 #register-page .h2
+  font-weight 100
+  
+#page-5 .form.widget
+  margin-top 30px
+  
+#page-5 .cloaked
+  display none
+
+.stacked 
+  position relative
+  
+/* Card Stacked */
+.stacked.segment:after, .stacked.segment:before, .stacked.segments:after, .stacked.segments:before
+  content ''
+  position: absolute
+  bottom -3px
+  left 0
+  border-top 1px solid rgba(34,36,38,.15)
+  background rgba(0,0,0,.03)
+  width 100%
+  height 6px
+  visibility: visible
+
+.stacked.segment:after, .stacked.segment:before, .ui.stacked.segments:after, .stacked.segments:before
+  content ''
+  position absolute
+  bottom -13px
+  left 0
+  border-top 1px solid rgba(34,36,38,.15)
+  background rgba(0,0,0,.03)
+  width 100%
+  height 6px
+  visibility visible
+  
+.tall.stacked.segment:before, .tall.stacked.segments:before
+  display block
+  bottom 0
+
+
+  
+  
+  
+/* Utility Classes
+ ---------------------------------*/  
+ .btn:hover, .btn:active {
+   color #eee
+ }
+// #page-1, #page-2, #page-3
+//   display none
+
+.margin-t0, .margin-l0, .margin-r0, .margin-b0 
+  margin 0
+
+.pull-none
+  float none !important
+  
+
+@media only screen and (min-width:660px) 
+  #site-demo img
+    width 650px
+  
+@media only screen and (max-width: 768px) 
+  // #page-3
+  //   padding 0 !important
+  #page-1 .bottom
+    width 100%
+  #page-3 h1
+    font-size 25px
+  #page-3 .nav-pills
+    width 100%
+    margin 0
+    margin-bottom 10px
+  #page-3 .nav-pills li a
+    font-size 100%
+  #page-4 #site-demo
+    bottom -50px
+    
+  
+@media only screen and (max-width: 400px)
+  #page-1 #intro-hero
+    font-size 45px
+  #page-5 .card-panel
+    padding 5px
+    

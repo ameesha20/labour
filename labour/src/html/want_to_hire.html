@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Want To Hire</title>
+    <link rel="stylesheet" href="../css/want_to_hire.css">
+</head>
+
+<body>
+
+    <form action="want_to_hire.html" method="post">
+
+
+        <h1>Register</h1>
+
+        <fieldset>
+
+            <legend><span class="number">1</span> Your basic info</legend>
+            <input type="text" name="email" placeholder="Email*" autocomplete="off" required />
+            <input type="password" name="password" placeholder="Passsword*" id="pwd" autocomplete="off" required />
+
+            <input type="text" id="name" name="user_name" placeholder="Your Name*">
+            <textarea id="address" name="user_address" placeholder="Enter your address*"></textarea>
+            <label>Age:</label>
+            <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under
+                18</label><br>
+            <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or
+                Older</label><br>
+            <br>
+            <p>Passport size Photo</p><input type="file" multiple="false" accept="image/*" id="img" class="button"
+                onchange="loadImage()"> </br>
+            <div></div></br>
+
+        </fieldset>
+        <fieldset class="profile">
+
+            <legend><span class="number">2</span> Your profile</legend>
+
+            <textarea id="bio" name="user_bio" placeholder="Enter what you are looking for"></textarea>
+
+
+            <label for="job">What Job role are you looking to hire?</label>
+            <select id="job" name="user_job">
+                <optgroup label="Web">
+                    <option value="web_designer">Web Designer</option>
+                    <option value="frontend_developer">Front-End Developer</option>
+                    <option value="php_developer">PHP Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                    <option value="rails_developer">Rails Developer</option>
+                    <option value="wordpress_developer">WordPress Developer</option>
+                </optgroup>
+                <optgroup label="Writing">
+                    <option value="content_writing">Content Writing</option>
+                    <option value="digital_writing">Digital Writing</option>
+                    <option value="book_writing">Book Writing</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="business_owner">Business Owner</option>
+                    <option value="freelancer">Freelancer</option>
+                </optgroup>
+
+                <optgroup label="Design">
+                    <option value="editing">Photo/Video Editing</option>
+                    <option value="bookdesign">Book Cover design</option>
+                </optgroup>
+                <optgroup label="Physical Work">
+                    <option value="plumber">Plumber</option>
+                    <option value="electrician">Electrician</option>
+                    <option value="Mechanic">Mechanic</option>
+                </optgroup>
+
+            </select>
+        </fieldset>
+        <br>
+
+        <button type="submit">Sign up</button>
+        <div class="login">
+            <p>Already a member?</p>
+            <a href="login_hire.html"> Login</a>
+        </div>
+    </form>
+    <!-- partial -->
+
+</body>
+
+</html>

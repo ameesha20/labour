@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Want To Work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../css/want_to_work.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <form action="want_to_work.html" method="post">
+
+        <h1>Register</h1>
+
+        <fieldset>
+
+            <legend><span class="number">1</span> Your basic info</legend>
+            <input type="text" name="email" placeholder="Email*" autocomplete="off" required />
+            <input type="password" name="password" placeholder="Passsword*" id="pwd" autocomplete="off" required />
+            <input type="text" id="name" name="user_name" placeholder="Your Name*">
+
+            <label>Age:</label>
+            <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under
+                18</label><br>
+            <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">18 or
+                Older</label><br>
+            <br>
+            <p>Passport size Photo</p><input type="file" multiple="false" accept="image/*" id="img" class="button"
+                onchange="loadImage()"> </br>
+            <div></div></br>
+
+        </fieldset>
+        <fieldset class="profile">
+
+            <legend><span class="number">2</span> Your profile</legend>
+
+            <textarea id="bio" name="user_bio" placeholder="Biography"></textarea>
+
+
+            <p>What do you work as?</p><textarea id="job-role" name="user_job" placeholder="Your Job role"></textarea>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="development" value="interest_development" name="user_interest">
+            <label class="light" for="development">Development</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest">
+            <label class="light" for="design">Design</label><br>
+            <input type="checkbox" id="business" value="interest_business" name="user_interest">
+            <label class="light" for="business">Business</label><br>
+            <input type="checkbox" id="writing" value="interest_writing" name="user_interest">
+            <label class="light" for="writing">Writing</label><br>
+            <input type="checkbox" id="sales" value="interest_sales" name="user_interest">
+            <label class="light" for="sales">Sales/Marketting</label><br>
+            <input type="checkbox" id="work" value="interest_work" name="user_interest">
+            <label class="light" for="business">Physical Work</label>
+        </fieldset>
+        <button type="submit">Sign up</button>
+        <div class="login">
+            <p>Already a member?</p>
+            <a href="login_work.html"> Login</a>
+        </div>
+
+    </form>
+    <!-- partial -->
+
+</body>
+
+</html>
